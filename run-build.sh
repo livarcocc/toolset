@@ -25,6 +25,9 @@ CUSTOM_BUILD_ARGS=
 # Set nuget package cache under the repo
 [ -z $NUGET_PACKAGES ] && export NUGET_PACKAGES="$REPOROOT/.nuget/packages"
 
+#unsets DOTNET_ROOT
+unset DOTNET_ROOT
+
 args=( )
 
 while [[ $# > 0 ]]; do
